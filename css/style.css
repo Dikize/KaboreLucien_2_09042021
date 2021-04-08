@@ -1,0 +1,244 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--************************* ( container principale ) *************************--*/
+.container {
+    display: grid;
+    row-gap: 10px;
+}
+
+.logo {
+    font-family: 'Shrikhand', cursive, sans-serif;
+    text-align: center;
+}
+
+/*--************************* ( header ) *************************--*/
+header {
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    font-size: larger;
+}
+
+.flexForm {
+    height: 340px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+.search {
+    width: 100%;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    height: 40px;
+}
+.search img {
+    position: absolute;
+    left: 60px;
+    align-self: center;
+    justify-self: center;
+}
+input[type="search"] {
+    width: 100%;
+    height: 40px;
+    background-color: #F2F2F2;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+}
+header h2 {
+    padding-top: 10px;
+    font-weight: bolder;
+}
+header p {
+    font-size: large;
+}
+header button {
+    width: 80%;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    color: white;
+    background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+    cursor: pointer;
+}
+/* header button a {
+    font-size: 22px;
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 20px;
+    letter-spacing: 1px;
+} */
+.bouton-3D p {
+    display: inline-block;
+    font-size: larger;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+/*--************************* (Footer) *************************--*/
+main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+main h2 {
+    font-size: x-large;
+    font-weight: bolder;
+}
+article {
+    background-color: #F9F9F9;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    margin: 40px 0 20px;
+}
+article .card {
+    height: 280px;
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
+}
+article .card .img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+article .card:nth-child(2) .img {
+    background-color: #333;
+    background-image: url('../images/acceuil/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+article .card:nth-child(3) .img {
+    background-color: #333;
+    background-image: url('../images/acceuil/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+article .card:nth-child(4) .img {
+    background-color: #333;
+    background-image: url('../images/acceuil/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+article .card:nth-child(5) .img {
+    background-color: #333;
+    background-image: url('../images/acceuil/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.item {
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 30px 28px;
+    padding: 12px 25px 10px 12px;
+    font-size: larger;
+}
+
+.item figcaption {
+grid-column: 1/2;
+grid-row: 1/2;
+align-self: center;
+justify-self: flex-start;
+}
+.item p {
+grid-column: 1/2;
+grid-row: 2/3;
+align-self: center;
+justify-self: flex-start;
+}
+.item .far {
+grid-column: 2/3;
+grid-row: 1/2;
+align-self: center;
+justify-self: flex-end
+}
+
+aside {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 20px;
+}
+aside .card img {
+    margin-right: 10px;
+}
+aside .fa, .fas {
+    font-size: larger;
+    margin-right: 10px;
+}
+aside .card {
+    width: 100%;
+    height: 60px;
+    background-color: #F9F9F9;
+    border-radius: 16px;
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    column-gap: 5px;
+}
+.indicePosition {
+    width: 27px;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    background-color: #9356DC;
+    clip-path: circle(48%);
+    position: relative;
+    right: 12px;
+    height: 28px;
+    display: grid;
+    align-items: center;
+}
+
+/*--************************* (Footer) *************************--*/
+footer {
+    background: #444;
+    height: 250px;
+    display: grid;
+    align-items: center;
+    padding: 20px;
+}
+footer a {
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    outline: 0;
+}
+footer a:nth-child(1) {
+    font-size: larger;
+    font-weight: bold;
+}
+footerItem:nth-child(1) i a{
+    margin-left: 10px;
+}
+footerItem:nth-child(2) i a{
+    margin-left: 5px;
+}
+footer .fa, .fas {
+    font-size: larger;
+    /* margin-right: 10px; */
+    color: white;
+}
+

@@ -33,7 +33,7 @@ header {
 }
 
 .flexForm {
-    height: 340px;
+    height: 390px;
     text-align: center;
     display: grid;
     justify-items: center;
@@ -60,17 +60,21 @@ input[type="search"] {
     cursor: pointer;
 }
 header h2 {
-    padding-top: 10px;
+    padding: 10px 20px 0;
     font-weight: bolder;
+    margin: 0;
 }
 header p {
     font-size: large;
+    padding: 0 5px;
 }
 header button {
     width: 80%;
-    height: 55px;
-    margin-bottom: 10px;
+    height: 65px;
+    margin: 15px 0 25px 0;
     border-radius: 40px;
+    border: 1px solid transparent;
+    box-shadow: 4px 8px 16px white;
     color: white;
     background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
     cursor: pointer;
@@ -104,8 +108,8 @@ article {
     display: flex;
     flex-direction: column;
 }
-h2 {
-    margin: 40px 0 20px;
+article h2 {
+    margin: 10px 0;
 }
 article .card {
     height: 280px;
@@ -174,7 +178,7 @@ justify-self: flex-end
 }
 
 aside {
-    height: 400px;
+    height: 490px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -183,20 +187,20 @@ aside {
 aside .card img {
     margin-right: 10px;
 }
-aside .fa, .fas {
+aside .fa, .fas:nth-child(2) {
     font-size: larger;
     margin-right: 10px;
 }
 aside .card {
     width: 100%;
-    height: 60px;
+    height: 80px;
+    margin: 20px 0;
     background-color: #F9F9F9;
-    border-radius: 16px;
+    border-radius: 25px;
     box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
     display: flex;
     margin: 0 auto;
     align-items: center;
-    column-gap: 5px;
 }
 .indicePosition {
     width: 27px;
@@ -230,15 +234,20 @@ footer a:nth-child(1) {
     font-size: larger;
     font-weight: bold;
 }
-footerItem:nth-child(1) i a{
+
+.footerItem:nth-child(1) a {
     margin-left: 10px;
 }
-footerItem:nth-child(2) i a{
-    margin-left: 5px;
+.footerItem:nth-child(2) a {
+    margin-left: 7px;
 }
-footer .fa, .fas {
+
+.fa, .fas:nth-child(1) {
     font-size: larger;
     /* margin-right: 10px; */
     color: white;
+}
+.fa, .fas .fa-hands-helping  {
+    font-size: large;
 }
 

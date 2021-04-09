@@ -1,7 +1,7 @@
 $gris: #F9F9F9;
 $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
 
-@import 'header';
+// @import 'header';
 @import 'footer';
 
 *, ::before, ::after {
@@ -19,190 +19,107 @@ body {
 }
 
 /*--************************* ( container principale ) *************************--*/
+
 .container {
-    display: grid;
-    row-gap: 10px;
-}
+    padding: 30px 0 50px;
 
-/*--************************* (Footer) *************************--*/
-%backgraound {
-    background-color: #333;
-    background-size: cover;
-    background-position: center;
 }
-main {
-    display: flex;
-    flex-direction: column-reverse;
-    h2 {
-        font-size: x-large;
-        font-weight: bolder;
-    }
-}
-article {
-    background-color: $gris;
-    padding: 30px 15px;
-    display: flex;
-    flex-direction: column;
-    
-    h2 {
-        margin: 10px 0;
-    }
-    .card {
-        height: 280px;
-        width: 100%;
-        color: #333;
-        text-decoration: none;
-        outline: 0;
-        margin: 30px 0;
-        border-radius: 20px;
-        box-shadow: $shadowCard;
-        
-        .img {
-            width: 100%;
-            height: 200px;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-        }
-        &:nth-child(2) .img {
-            @extend %backgraound;
-            background-image: url('../images/acceuil/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
-        }
-        &:nth-child(3) .img {
-            background-image: url('../images/acceuil/stil-u2Lp8tXIcjw-unsplash.jpg');
-            @extend %backgraound;
-        }
-        &:nth-child(4) .img {
-            @extend %backgraound;
-            background-image: url('../images/acceuil/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
-        }
-        &:nth-child(5) .img {
-            @extend %backgraound;
-            background-image: url('../images/acceuil/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
-        }
-        
-        .item {
-            height: 80px;
-            width: 100%;
-            font-size: larger;
-            display: grid;
-            grid-template-columns: 80% 20%;
-            grid-template-rows: 30px 28px;
-            padding: 12px 25px 10px 12px;
-            
-            figcaption {
-            grid-column: 1/2;
-            grid-row: 1/2;
-            align-self: center;
-            justify-self: flex-start;
-            }
-            p {
-            grid-column: 1/2;
-            grid-row: 2/3;
-            align-self: center;
-            justify-self: flex-start;
-            }
-            .far {
-            grid-column: 2/3;
-            grid-row: 1/2;
-            align-self: center;
-            justify-self: flex-end
-            }
-            .far {
-                cursor: pointer;
-        
-                &:hover {
-                    background-color: #9356DC;
-                }
-                &:focus {
-                    background-color: #9356DC;
-                }
-                &:active {
-                    background-color: #9356DC;
-                }
-            }
-        }
-    }
-}
-
-
-aside {
-    height: 490px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    row-gap: 20px;
-    
-    
-    .fa, .fas:nth-child(2) {
-        font-size: larger;
-        margin-right: 10px;
-    }
-    .card {
-        width: 100%;
-        height: 80px;
-        margin: 20px 0;
-        background-color: $gris;
-        border-radius: 25px;
-        box-shadow: $shadowCard;
-        display: flex;
-        align-items: center;
-
-        img {
-            margin-right: 10px;
-        }
-    }
-    .indicePosition {
-        width: 27px;
-        text-align: center;
-        font-size: larger;
-        color: white;
-        background-color: #9356DC;
-        clip-path: circle(48%);
-        position: relative;
-        right: 12px;
-        height: 28px;
+header {
+    .item-logo {
         display: grid;
         align-items: center;
+        grid-template-columns: 10% 80% 10%;
+        align-items: center;
+        
+        .logo {
+            font-family: 'Shrikhand', cursive, sans-serif;
+            justify-self: center;
+        }
+        .arrow {
+            justify-self: end;
+        }
+    }
+
+    .img {
+        height: 360px;
+        width: 100%;
+        margin-top: 20px;
+
+        img {
+            height: 360px;
+            width: 100%;
+            background-color: #333;
+            background-size: cover;
+            background-position: center;
+        }
     }
 }
 
-/*--************************* (Footer) *************************--*/
-footer {
-    background: #444;
-    height: 250px;
-    display: grid;
-    align-items: center;
-    padding: 20px;
-    
-    a {
-        font-size: medium;
-        color: white;
-        text-decoration: none;
-        outline: 0;
+main {
+    position: relative;
+    bottom: 62px;
+    z-index: 100;
+    background-color: #F9F9F9;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    padding: 30px 15px;
+
+    .title {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        align-items: center;
+        margin-bottom: 30px;        
         
-        &:nth-child(1) {
+        h2 {
+            font-size: xx-large;
+            font-weight: bolder;            
+        }
+        .far {
+            justify-self: center;
+        }
+    }
+
+    article {
+        h2 {
             font-size: larger;
-            font-weight: bold;
+            margin: 20px 0;
+        }
+        &:nth-child(1) h2{
+            margin-top: 0;
+        }
+        .trait {
+            width: 15%;
+            border: 2px solid #9cdb3a;
+            position: relative;
+            bottom: 15px;
+        }
+        a {
+            width: 100%;
+            height: 80px;
+            margin: 20px 0;
+            background-color: #F9F9F9;
+            border-radius: 15px;
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-template-rows: 40px 20px;
+            align-items: center;
+            
+            h3 {
+                margin-bottom: 3px;
+                align-self: flex-end;
+            }
+            p {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .item {
+                grid-column: 2/3;
+                grid-row: 2/3;                
+                p{
+
+                }
+            }
         }
     }
-    
-    .footerItem {
-        
-        &:nth-child(1) a {
-            margin-left: 10px;
-        }
-        &:nth-child(2) a {
-            margin-left: 7px;
-        }
-    }
 }
-
-.fa, .fas:nth-child(1) {
-    font-size: larger;
-    /* margin-right: 10px; */
-    color: white;
-}
-.fa, .fas .fa-hands-helping  {
-    font-size: large;
-}
-

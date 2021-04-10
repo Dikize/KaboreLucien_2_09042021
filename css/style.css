@@ -139,7 +139,7 @@ footer .footerItem:nth-child(2) a {
 footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
   font-size: larger;
   /* margin-right: 10px; */
-  color: white;
+  color: #ffffff;
 }
 
 footer .footerItem .fa, footer .footerItem .fas .fa-hands-helping {

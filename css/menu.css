@@ -49,7 +49,7 @@ footer .footerItem:nth-child(2) a {
 footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
   font-size: larger;
   /* margin-right: 10px; */
-  color: white;
+  color: #ffffff;
 }
 
 footer .footerItem .fa, footer .footerItem .fas .fa-hands-helping {
@@ -98,7 +98,8 @@ header .img img {
   margin: 20px 0;
   padding-left: 10px;
   font-size: small;
-  background-color: #F9F9F9;
+  background-color: white;
+  cursor: pointer;
   border-radius: 15px;
   -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
@@ -146,9 +147,18 @@ header .img img {
 }
 
 .card .item .check {
+  display: none;
+}
+
+.card .item span {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.card:hover .item .check {
   height: 100%;
   width: 100%;
-  background-color: #9cdb3a;
+  background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   display: -webkit-box;
@@ -156,26 +166,18 @@ header .img img {
   display: flex;
 }
 
-.card .item .check input {
+.card:hover .item .check input {
   margin: auto;
-  cursor: pointer;
 }
 
-.card .item .check input[name="scales"] {
+.card:hover .item .check input[name="scales"] {
   height: 100%;
   width: 100%;
   display: none;
 }
 
-.card .item .check img {
+.card:hover .item .check img {
   margin: auto;
-}
-
-.card .item span {
-  margin: auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .button3D {
@@ -209,7 +211,7 @@ header .img img {
   position: relative;
   bottom: 62px;
   z-index: 100;
-  background-color: #F9F9F9;
+  background-color: #F2F2F2;
   border-top-left-radius: 55px;
   border-top-right-radius: 55px;
   padding: 30px 15px 0;
@@ -254,9 +256,17 @@ header .img img {
 
 .container main article .trait {
   width: 15%;
-  border: 2px solid #9cdb3a;
+  border: 2px solid #99E2D0;
   position: relative;
   bottom: 15px;
+}
+
+.container main article:nth-child(3) .trait {
+  width: 10%;
+}
+
+.container main article:nth-child(4) .trait {
+  width: 12%;
 }
 
 *, ::before, ::after {

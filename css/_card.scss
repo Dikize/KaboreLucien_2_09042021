@@ -40,19 +40,24 @@ $green: #99E2D0;
         }
         span {
             margin: auto;
-            margin-bottom: 10px;
+            margin-bottom: 22px;
         }
     }
     &:hover {
         .item {
             .check {
                 height: 100%;
-                width: 100%;
+                width: 60%;
                 background-color:$green;
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
                 display: flex;
+                animation: slidein 1s ease-in 1s reverse both running;
 
+                @keyframes slidein {
+                    from { margin-right:0%; } to { margin-left:100%; } 
+                }
+               
                 input {
                     margin: auto;
                     &[name="scales"] {
@@ -63,6 +68,10 @@ $green: #99E2D0;
                 }
                 img {
                     margin: auto;
+                    transition: transform 1s;
+                    &:hover {
+                        transform: rotate(390deg);
+                    }
                 }
             }
         }

@@ -2,13 +2,18 @@ $green: #99E2D0;
 $gris: #F2F2F2;
 
 .container {
-    padding: 30px 0 0;
+    padding: 0;
+    background-color: $gris;
 
+    header {
+        background-color: white;
+        padding-top: 30px;
+    }
     main {
+        background-color: $gris;
         position: relative;
         bottom: 62px;
         z-index: 100;
-        background-color: $gris;
         border-top-left-radius: 55px;
         border-top-right-radius: 55px;
         padding: 30px 15px 0;

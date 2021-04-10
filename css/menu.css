@@ -152,18 +152,37 @@ header .img img {
 
 .card .item span {
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
 }
 
 .card:hover .item .check {
   height: 100%;
-  width: 100%;
+  width: 60%;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  animation: slidein 1s ease-in 1s reverse both running;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
 }
 
 .card:hover .item .check input {
@@ -178,6 +197,15 @@ header .img img {
 
 .card:hover .item .check img {
   margin: auto;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.card:hover .item .check img:hover {
+  -webkit-transform: rotate(390deg);
+          transform: rotate(390deg);
 }
 
 .button3D {
@@ -204,14 +232,20 @@ header .img img {
 }
 
 .container {
-  padding: 30px 0 0;
+  padding: 0;
+  background-color: #F2F2F2;
+}
+
+.container header {
+  background-color: white;
+  padding-top: 30px;
 }
 
 .container main {
+  background-color: #F2F2F2;
   position: relative;
   bottom: 62px;
   z-index: 100;
-  background-color: #F2F2F2;
   border-top-left-radius: 55px;
   border-top-right-radius: 55px;
   padding: 30px 15px 0;

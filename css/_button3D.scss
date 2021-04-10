@@ -1,0 +1,20 @@
+.button3D {
+    width: 80%;
+    height: 65px;
+    font-size: x-large;
+    margin: 45px auto 0;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    box-shadow: 4px 8px 16px white;
+    color: white;
+    background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+    cursor: pointer;
+    
+    p {
+        display: inline-block;
+        font-size: larger;
+        color: white;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+}

@@ -49,6 +49,16 @@ $gris: #F2F2F2;
                 //     }
                 // }
             }
+
+            // .icon {
+            //     width: 200px;
+            //     path {
+            //         fill: transparent;
+            //         stroke-width: 10;
+            //         stroke: #892cdc;
+            //     }
+
+            // }
         }
     }
     
@@ -57,9 +67,9 @@ $gris: #F2F2F2;
             font-size: larger;
             margin: 20px 0;
 
-            background-image: linear-gradient(to right, #373737 4%, #c0b283 20% );
-            background-clip: text;
-            color: transparent;
+            // background-image: linear-gradient(to right, #373737 4%, #c0b283 20% );
+            // background-clip: text;
+            // color: transparent;
         }
         &:nth-child(1) h2{
             margin-top: 0;
@@ -75,17 +85,17 @@ $gris: #F2F2F2;
             .trait {
                 width: 10%;
             }
-            h2 {
-                background-image: linear-gradient(to right, #373737 4%, #c0b283 6%);
-            }
+            // h2 {
+            //     background-image: linear-gradient(to right, #373737 4%, #c0b283 6%);
+            // }
         }
         &:nth-child(4) {
             .trait {
                 width: 12%;
             }
-            h2 {
-                background-image: linear-gradient(to right, #373737 3%, #c0b283 17%);
-            }
+            // h2 {
+            //     background-image: linear-gradient(to right, #373737 3%, #c0b283 17%);
+            // }
         }
     }
 }

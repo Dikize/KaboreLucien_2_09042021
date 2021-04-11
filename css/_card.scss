@@ -9,13 +9,25 @@ $green: #99E2D0;
     background-color: white;
     cursor: pointer;
     border-radius: 15px;
-    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 8px 16px rgba(255, 255, 255, 0.3);
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 40px 20px;
     align-items: center;
-    animation: card-blur 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
 
+    // animation au clique
+    border-bottom:  5px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.1s;
+    float: left;
+
+    &:hover {
+        transform: translate(0,5px);
+        border-bottom: 1px solid $green;
+        border-top: 1px solid $green;
+    }
+
+    // Animation blur page
+    animation: card-blur 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
     @keyframes card-blur {
         0% {
         filter: blur(0.01);
@@ -35,7 +47,7 @@ $green: #99E2D0;
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .item {
+    .checkbox {
         height: 100%;
         grid-column: 2/3;
         grid-row: 1/4; 
@@ -52,7 +64,7 @@ $green: #99E2D0;
         }
     }
     &:hover {
-        .item {
+        .checkbox {
             .check {
                 height: 100%;
                 width: 60%;

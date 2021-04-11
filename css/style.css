@@ -124,7 +124,7 @@ footer a {
 }
 
 footer a:nth-child(1) {
-  font-size: larger;
+  font-size: small;
   font-weight: bold;
 }
 
@@ -133,7 +133,7 @@ footer .footerItem:nth-child(1) a {
 }
 
 footer .footerItem:nth-child(2) a {
-  margin-left: 7px;
+  margin-left: 10px;
 }
 
 footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
@@ -142,8 +142,8 @@ footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
   color: #ffffff;
 }
 
-footer .footerItem .fa, footer .footerItem .fas .fa-hands-helping {
-  font-size: large;
+footer .footerItem .fas .fa-hands-helping {
+  font-size: small;
 }
 
 /*--************************* ( container principale ) *************************--*/

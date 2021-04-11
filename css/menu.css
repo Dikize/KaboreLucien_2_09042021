@@ -34,7 +34,7 @@ footer a {
 }
 
 footer a:nth-child(1) {
-  font-size: larger;
+  font-size: small;
   font-weight: bold;
 }
 
@@ -43,7 +43,7 @@ footer .footerItem:nth-child(1) a {
 }
 
 footer .footerItem:nth-child(2) a {
-  margin-left: 7px;
+  margin-left: 10px;
 }
 
 footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
@@ -52,8 +52,8 @@ footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
   color: #ffffff;
 }
 
-footer .footerItem .fa, footer .footerItem .fas .fa-hands-helping {
-  font-size: large;
+footer .footerItem .fas .fa-hands-helping {
+  font-size: small;
 }
 
 header .item-logo {
@@ -101,8 +101,8 @@ header .img img {
   background-color: white;
   cursor: pointer;
   border-radius: 15px;
-  -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 4px 8px 16px rgba(255, 255, 255, 0.3);
+          box-shadow: 4px 8px 16px rgba(255, 255, 255, 0.3);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 70% 30%;
@@ -112,7 +112,18 @@ header .img img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  float: left;
   animation: card-blur 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) alternate-reverse both;
+}
+
+.card:hover {
+  -webkit-transform: translate(0, 5px);
+          transform: translate(0, 5px);
+  border-bottom: 1px solid #99E2D0;
+  border-top: 1px solid #99E2D0;
 }
 
 @-webkit-keyframes card-blur {
@@ -154,7 +165,7 @@ header .img img {
   grid-row: 2/3;
 }
 
-.card .item {
+.card .checkbox {
   height: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -169,16 +180,16 @@ header .img img {
           column-gap: 20px;
 }
 
-.card .item .check {
+.card .checkbox .check {
   display: none;
 }
 
-.card .item span {
+.card .checkbox span {
   margin: auto;
   margin-bottom: 22px;
 }
 
-.card:hover .item .check {
+.card:hover .checkbox .check {
   height: 100%;
   width: 60%;
   background-color: #99E2D0;
@@ -221,17 +232,17 @@ header .img img {
   }
 }
 
-.card:hover .item .check input {
+.card:hover .checkbox .check input {
   margin: auto;
 }
 
-.card:hover .item .check input[name="scales"] {
+.card:hover .checkbox .check input[name="scales"] {
   width: 0;
   height: 0;
   opacity: 0;
 }
 
-.card:hover .item .check img {
+.card:hover .checkbox .check img {
   margin: auto;
   -webkit-animation: rotate-up 0.65s linear both;
           animation: rotate-up 0.65s linear both;
@@ -273,13 +284,22 @@ header .img img {
   font-size: x-large;
   margin: 45px auto 0;
   border-radius: 40px;
-  border: 1px solid transparent;
+  border: 0px solid #FF79DA;
   -webkit-box-shadow: 4px 8px 16px white;
           box-shadow: 4px 8px 16px white;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
-  background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+  background: linear-gradient(172deg, #FF79DA 1%, #9356DC 90%);
   cursor: pointer;
+  border-bottom: 5px solid #FF79DA;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  float: left;
+}
+
+.button3D:active {
+  -webkit-transform: translate(0, 5px);
+          transform: translate(0, 5px);
+  border-bottom: 1px solid;
 }
 
 .button3D p {
@@ -368,10 +388,6 @@ header .img img {
 .container article h2 {
   font-size: larger;
   margin: 20px 0;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(4%, #373737), color-stop(20%, #c0b283));
-  background-image: linear-gradient(to right, #373737 4%, #c0b283 20%);
-  background-clip: text;
-  color: transparent;
 }
 
 .container article:nth-child(1) h2 {
@@ -389,18 +405,8 @@ header .img img {
   width: 10%;
 }
 
-.container article:nth-child(3) h2 {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(4%, #373737), color-stop(6%, #c0b283));
-  background-image: linear-gradient(to right, #373737 4%, #c0b283 6%);
-}
-
 .container article:nth-child(4) .trait {
   width: 12%;
-}
-
-.container article:nth-child(4) h2 {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(3%, #373737), color-stop(17%, #c0b283));
-  background-image: linear-gradient(to right, #373737 3%, #c0b283 17%);
 }
 
 *, ::before, ::after {

@@ -32,33 +32,59 @@ $gris: #F2F2F2;
             }
             .far {
                 justify-self: center;
+                // animation: rotate-up 2s linear both;
+                    
+                // @keyframes rotate-up {
+                //     0% {
+                //         background: #892cdc;
+                //         border-radius: 0% 0% 50% 50%;
+                //     }
+                //     50% {
+                //         background: #892cdc;
+                //         border-radius: 50% 50% 0% 0%;
+                //     }
+                //     100% {
+                //         background: #892cdc;
+                //         border-radius: 50% 50% 0% 0%;
+                //     }
+                // }
             }
         }
+    }
     
-        article {
-            h2 {
-                font-size: larger;
-                margin: 20px 0;
-            }
-            &:nth-child(1) h2{
-                margin-top: 0;
-            }
+    article {
+        h2 {
+            font-size: larger;
+            margin: 20px 0;
+
+            background-image: linear-gradient(to right, #373737 4%, #c0b283 20% );
+            background-clip: text;
+            color: transparent;
+        }
+        &:nth-child(1) h2{
+            margin-top: 0;
+        }
+        .trait {
+            width: 15%;
+            border: 2px solid $green;
+            position: relative;
+            bottom: 15px;
+        }
+        
+        &:nth-child(3) {
             .trait {
-                width: 15%;
-                border: 2px solid $green;
-                position: relative;
-                bottom: 15px;
+                width: 10%;
             }
-            
-            &:nth-child(3) {
-                .trait {
-                    width: 10%;
-                }
+            h2 {
+                background-image: linear-gradient(to right, #373737 4%, #c0b283 6%);
             }
-            &:nth-child(4) {
-                .trait {
-                    width: 12%;
-                }
+        }
+        &:nth-child(4) {
+            .trait {
+                width: 12%;
+            }
+            h2 {
+                background-image: linear-gradient(to right, #373737 3%, #c0b283 17%);
             }
         }
     }

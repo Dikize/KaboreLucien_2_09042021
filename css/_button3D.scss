@@ -9,12 +9,22 @@
     color: white;
     background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
     cursor: pointer;
-    
+
     p {
-        display: inline-block;
         font-size: larger;
-        color: white;
-        letter-spacing: 1px;
-        text-decoration: none;
     }
+
+    &:hover {
+        animation: shadow 0.4s linear both;
+    }
+    @keyframes shadow {
+        0% {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+        100% {
+            background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        }
+    }
+    
 }

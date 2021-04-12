@@ -9,6 +9,7 @@
     color: white;
     background: linear-gradient(172deg, #FF79DA 1%, #9356DC 90%);
     cursor: pointer;
+    outline: none;
     border-bottom:  5px solid #FF79DA;
     transition: all 0.1s;
     float: left;
@@ -25,14 +26,4 @@
     &:hover {
         animation: shadow 0.4s linear both;
     }
-    @keyframes shadow {
-        0% {
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        }
-        100% {
-            background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
-            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-        }
-    }
-    
 }

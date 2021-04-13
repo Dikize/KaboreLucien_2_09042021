@@ -7,14 +7,18 @@ $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
 
 
 /*--************************* ( container principale ) *************************--*/
-.container {
-    display: grid;
-    row-gap: 10px;
-
-    .loading {
-        background-color: #262626;
-    }
-    .loading {
+.loading {
+    background-color: #262626;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    z-index: 1000;
+    // animation: card-blur 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	// animation: scale-load 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: bounce-load 10s ease-in both;
+    
+    .ring {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -33,45 +37,59 @@ $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
         text-transform: uppercase;
         text-shadow: 0 0 10px #fff000;
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
 
-    .ring {
-        content: "";
-        position: absolute;
-        top: -3px;
-        left: -3px;
-        width: 100%;
-        height: 100%;
-        border: 3px solid transparent;
-        border-top: 3px solid #fff000;
-        border-right: 3px solid #fff000;
-        border-radius: 50%;
-        animation: circle 2s linear infinite;
-    }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: 103%;
+            height: 103%;
+            border: 3px solid transparent;
+            border-top: 3px solid #fff000;
+            border-right: 3px solid #fff000;
+            border-radius: 50%;
+            animation: circle 2s linear infinite;
+        }
 
-    span {
-        display: block;
-        position: absolute;
-        top: calc(50% - 2px);
-        left: 50%;
-        width: 50%;
-        height: 4px;
-        background-color: transparent;
-        transform-origin: left;
-        animation: animate 2s linear infinite;
-    }
-    span::before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50px;
-        background-color: transparent;
-        top: -6px;
-        right: -8px;
-        box-shadow: 0 0 20px #fff000;
-    }
+        h3 {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);            
+        }
 
+        span {
+            display: block;
+            position: absolute;
+            top: calc(50% - 2px);
+            left: 50%;
+            width: 50%;
+            height: 4px;
+            background-color: transparent;
+            transform-origin: left;
+            animation: circle 2s linear infinite;
+    
+            &:before {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border-radius: 50px;
+                background-color: #fff000;
+                top: 70px;
+                right: 22px;
+                box-shadow: 0 0 20px #fff000;
+            }
+        }
+    }
+}
+
+/*--( container principale )--*/
+.container {
+    display: grid;
+    row-gap: 10px;
+    animation: scale-out-horizontal 13s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
 }
 
 /*--************************* (Footer) *************************--*/

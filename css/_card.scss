@@ -70,18 +70,13 @@ $green: #99E2D0;
                 // animation
                 animation: slidein 1000ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
-                input {
+                input[name="scales"] {
                     margin: auto;
-                    &[name="scales"] {
-                        // height: 100%;
-                        // width: 100%;
-                        // display: none;
-                        width: 0;
-                        height: 0;
-                        opacity: 0;
-                    }
+                    width: 0;
+                    height: 0;
+                    opacity: 0;
                 }
-                img {
+                input[type="image"] {
                     margin: auto;
                     animation: rotate-up 0.65s linear both;
                 }

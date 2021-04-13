@@ -187,17 +187,14 @@ header .img img {
           animation: slidein 1000ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.card:hover .checkbox .check input {
-  margin: auto;
-}
-
 .card:hover .checkbox .check input[name="scales"] {
+  margin: auto;
   width: 0;
   height: 0;
   opacity: 0;
 }
 
-.card:hover .checkbox .check img {
+.card:hover .checkbox .check input[type="image"] {
   margin: auto;
   -webkit-animation: rotate-up 0.65s linear both;
           animation: rotate-up 0.65s linear both;
@@ -319,6 +316,50 @@ article:nth-child(4) {
 
 .container article:nth-child(4) .trait {
   width: 12%;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes card-blur {

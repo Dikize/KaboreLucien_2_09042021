@@ -564,6 +564,8 @@ ul li:nth-child(10) {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1000;
+  -webkit-animation: bounce-load 10s ease-in both;
+          animation: bounce-load 10s ease-in both;
 }
 
 .loading .ring {
@@ -644,6 +646,7 @@ ul li:nth-child(10) {
   display: -ms-grid;
   display: grid;
   row-gap: 10px;
+  animation: scale-out-horizontal 13s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
 }
 
 /*--************************* (Footer) *************************--*/

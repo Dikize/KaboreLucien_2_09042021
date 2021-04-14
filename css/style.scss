@@ -16,7 +16,7 @@ $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
     z-index: 1000;
     // animation: card-blur 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	// animation: scale-load 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    // animation: bounce-load 10s ease-in both;
+    animation: bounce-load 10s ease-in both;
     
     .ring {
         position: absolute;
@@ -89,7 +89,7 @@ $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
 .container {
     display: grid;
     row-gap: 10px;
-    // animation: scale-out-horizontal 13s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+    animation: scale-out-horizontal 13s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
 }
 
 /*--************************* (Footer) *************************--*/

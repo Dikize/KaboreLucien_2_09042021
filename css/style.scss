@@ -6,83 +6,14 @@ $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
 @import '_keyframes';
 
 
-/*--************************* ( container principale ) *************************--*/
-.loading {
-    background-color: #262626;
+/*--( Simulation de chargement de page )--*/
+iframe {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
     z-index: 1000;
-    // animation: card-blur 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	// animation: scale-load 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    border: none;
+    outline: none;
     animation: bounce-load 10s ease-in both;
-    
-    .ring {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 220px;
-        height: 220px;
-        background-color: transparent;
-        border: 3px solid #3C3C3C;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 150px;
-        font-family: sans-serif;
-        font-size: 20px;
-        color: #fff000;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        text-shadow: 0 0 10px #fff000;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -3px;
-            left: -3px;
-            width: 103%;
-            height: 103%;
-            border: 3px solid transparent;
-            border-top: 3px solid #fff000;
-            border-right: 3px solid #fff000;
-            border-radius: 50%;
-            animation: circle 2s linear infinite;
-        }
-
-        h3 {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);            
-        }
-
-        span {
-            display: block;
-            position: absolute;
-            top: calc(50% - 2px);
-            left: 50%;
-            width: 50%;
-            height: 4px;
-            background-color: transparent;
-            transform-origin: left;
-            animation: circle 2s linear infinite;
-    
-            &:before {
-                content: "";
-                position: absolute;
-                width: 16px;
-                height: 16px;
-                border-radius: 50px;
-                background-color: #fff000;
-                top: 70px;
-                right: 22px;
-                box-shadow: 0 0 20px #fff000;
-            }
-        }
-    }
+    height: 100vh;
 }
 
 /*--( container principale )--*/

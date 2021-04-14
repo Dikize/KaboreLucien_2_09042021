@@ -10,6 +10,73 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // animation: bounce-load 10s ease-in both;
+
+    
+    .loadingRing {
+        background-color: #262626;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+        z-index: 1000;
+        // animation: card-blur 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        // animation: scale-load 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        
+        .ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 220px;
+            height: 220px;
+            background-color: transparent;
+            border: 3px solid #3C3C3C;
+            border-radius: 50%;
+            color: #fff000;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px #fff000;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    
+            &::before {
+                content: "";
+                position: absolute;
+                top: -3px;
+                left: -3px;
+                width: 103%;
+                height: 103%;
+                border: 3px solid transparent;
+                border-top: 3px solid #fff000;
+                border-right: 3px solid #fff000;
+                border-radius: 50%;
+                animation: circle 2s linear infinite;
+            }
+    
+            span {
+                display: block;
+                position: absolute;
+                top: calc(50% - 2px);
+                left: 50%;
+                width: 50%;
+                height: 4px;
+                background-color: transparent;
+                transform-origin: left;
+                animation: circle 2s linear infinite;
+        
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50px;
+                    background-color: #fff000;
+                    top: 70px;
+                    right: 22px;
+                    box-shadow: 0 0 20px #fff000;
+                }
+            }
+        }
+    }
     
     ul {
         width: 100%;
@@ -21,14 +88,13 @@ main {
         li {
             display: inline-block;
             list-style-type: none;
+            font-family: 'Roboto' sans-serif;
+            font-size: medium;
             color: #484848;
-            font-size: 140%;
-            letter-spacing: 10px;
             animation: flash 1.4s linear infinite;
         }
     }
-    
-    
+
     .card {
         height: 270px;
         width: 90%;

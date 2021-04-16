@@ -685,7 +685,8 @@ article .card .item p {
   justify-self: flex-start;
 }
 
-article .card .item .far {
+article .card .item svg {
+  cursor: pointer;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -698,20 +699,14 @@ article .card .item .far {
   justify-self: flex-end;
 }
 
-article .card .item .far {
-  cursor: pointer;
+article .card .item svg:hover path {
+  fill: #FF79DA;
 }
 
-article .card .item .far:hover {
-  background-color: #9356DC;
-}
-
-article .card .item .far:focus {
-  background-color: #9356DC;
-}
-
-article .card .item .far:active {
-  background-color: #9356DC;
+article .card .item svg path {
+  fill: transparent;
+  stroke-width: 15px;
+  stroke: #333;
 }
 
 aside {

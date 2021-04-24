@@ -644,7 +644,7 @@ article .card:nth-child(2)::before, article .card:nth-child(3)::before {
   font-size: larger;
   font-weight: bolder;
   border-radius: 2px;
-  background-color: aquamarine;
+  background-color: #99E2D0;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -722,7 +722,10 @@ article .card .item svg {
 }
 
 article .card .item svg:hover path {
-  fill: #FF79DA;
+  fill: url(#bg);
+  stroke: transparent;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 article .card .item svg path {

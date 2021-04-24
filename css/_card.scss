@@ -39,6 +39,8 @@ $green: #99E2D0;
         align-self: flex-end;
     }
     p {
+        white-space: nowrap;
+        overflow: hidden; text-overflow: ellipsis;
         grid-column: 1/2;
         grid-row: 2/3;
     }

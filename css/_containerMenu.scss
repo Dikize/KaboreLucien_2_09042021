@@ -67,7 +67,7 @@ $gris: #F2F2F2;
             font-size: larger;
             margin: 20px 0;
 
-            // background-image: linear-gradient(to right, #373737 4%, #c0b283 20% );
+            // background-color: linear-gradient(to right, #373737 4%, #c0b283 20% );
             // background-clip: text;
             // color: transparent;
         }
@@ -86,7 +86,7 @@ $gris: #F2F2F2;
                 width: 10%;
             }
             // h2 {
-            //     background-image: linear-gradient(to right, #373737 4%, #c0b283 6%);
+            //     background-color: linear-gradient(to right, #373737 4%, #c0b283 6%);
             // }
         }
         &:nth-child(4) {
@@ -94,12 +94,50 @@ $gris: #F2F2F2;
                 width: 12%;
             }
             // h2 {
-            //     background-image: linear-gradient(to right, #373737 3%, #c0b283 17%);
+            //     background-color: linear-gradient(to right, #373737 3%, #c0b283 17%);
             // }
         }
     }
 
-    @media (min-width: 1024) {
+}
+@media (min-width: 1024px) {
+    .container {
+        main {
+            padding: 0;
+            display: grid;
+            grid-template-rows: 70px 425px 70px;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            
+            .title {
+                margin: 0;
+                align-self: center;
+                grid-row: 1/2;
+                grid-column: 2/3;
+            }
+            article {
+                width: 90%;
+                justify-self: center;
+
+                &:nth-child(2) {
+                    grid-row: 2/3;
+                    grid-column: 1/2;
+                }
+                &:nth-child(3) {
+                    grid-row: 2/3;
+                    grid-column: 2/3;
+                }
+                &:nth-child(4) {
+                    grid-row: 2/3;
+                    grid-column: 3/4;
+                }
+            }
+            .button3D {
+                margin: 0;
+                justify-self: center;
+                grid-row: 3/4;
+                grid-column: 2/3;
+            }
+        }
 
     }
 }

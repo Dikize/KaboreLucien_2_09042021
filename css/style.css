@@ -51,7 +51,9 @@ header form .search input[type="search"] {
   font-size: large;
   text-align: center;
   cursor: pointer;
-  border: 1px inset transparent;
+  -webkit-box-shadow: 4px 8px 16px inset #B6B6B6;
+          box-shadow: 4px 8px 16px inset #B6B6B6;
+  border: 1px solid transparent;
   outline: none;
 }
 
@@ -621,6 +623,7 @@ article .card {
   border-radius: 20px;
   -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 article .card .img {
@@ -632,6 +635,25 @@ article .card .img {
 
 article .card:nth-child(2) .img {
   background-image: url("../images/acceuil/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+article .card:nth-child(2)::before, article .card:nth-child(3)::before {
+  content: "Nouveau";
+  width: 100px;
+  height: 40px;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 2px;
+  background-color: aquamarine;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 40px;
+  right: 20px;
 }
 
 article .card:nth-child(3) .img {
@@ -768,10 +790,10 @@ aside .indicePosition {
 @media (min-width: 768px) {
   main {
     margin-top: -10px;
-    background-color: #F9F9F9;
   }
   main aside {
     height: 200px;
+    background: white;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 32% 31% 31%;
@@ -812,6 +834,7 @@ aside .indicePosition {
     grid-row: 2/3;
   }
   main article {
+    padding-top: 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 48% 48%;
@@ -861,19 +884,28 @@ aside .indicePosition {
 }
 
 @media (min-width: 1024px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
+    background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+  }
+  body .container,
+  body footer {
+    max-width: 1171px;
+    margin: auto;
+  }
   main {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    padding: 0 10px 0 0;
   }
   main aside {
     width: 27%;
     max-width: 316px;
+    background-color: #F9F9F9;
     text-align: center;
     height: 755px;
-    padding: 30px 20px;
+    padding: 0 20px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -888,6 +920,7 @@ aside .indicePosition {
   }
   main article {
     width: 73%;
+    background-color: white;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }

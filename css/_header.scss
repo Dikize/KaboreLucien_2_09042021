@@ -131,4 +131,15 @@ header {
             }
         }
     }
+    @media (min-width: 1024px) {
+        & {
+            margin-top: 0;
+        }
+        .logo {
+            padding-top: 20px;
+        }
+        form .search {
+            width: 570px;
+        }
+    }
 }

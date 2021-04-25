@@ -157,6 +157,18 @@ header form button p {
   }
 }
 
+@media (min-width: 1024px) {
+  header {
+    margin-top: 0;
+  }
+  header .logo {
+    padding-top: 20px;
+  }
+  header form .search {
+    width: 570px;
+  }
+}
+
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -448,6 +460,36 @@ footer .footerItem .fas .fa-hands-helping {
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
             transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes slidein-bottom {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+}
+
+@keyframes slidein-bottom {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
   }
 }
 

@@ -6,6 +6,11 @@ $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
 @import '_keyframes';
 
 
+// @mixin gridChild ($column, $row) {
+//     grid-column: $column;
+//     grid-row: $row;
+// }
+
 /*--( Simulation de chargement de page )--*/
 iframe {
     position: absolute;
@@ -60,8 +65,7 @@ article {
         .img {
             width: 100%;
             height: 200px;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+            border-radius: 20px 20px 0 0;
         }
         &:nth-child(2) .img {
             @extend %backgraound;
@@ -178,9 +182,6 @@ aside {
         align-items: center;
     }
 }
-
-
-
 
 @media (min-width: 768px) {
     main {

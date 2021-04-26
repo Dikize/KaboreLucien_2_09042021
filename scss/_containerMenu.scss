@@ -21,6 +21,7 @@ $gris: #F2F2F2;
         flex-direction: column;
     
         .title {
+            width: 111%;
             display: grid;
             grid-template-columns: 80% 20%;
             align-items: center;
@@ -28,6 +29,7 @@ $gris: #F2F2F2;
             
             h2 {
                 font-size: xx-large;
+                font-family: 'Shrikhand', cursive, sans-serif;
                 font-weight: bolder;            
             }
             .far {

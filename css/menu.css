@@ -734,6 +734,7 @@ article:nth-child(4) {
 }
 
 .container main .title {
+  width: 111%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 80% 20%;
@@ -746,6 +747,7 @@ article:nth-child(4) {
 
 .container main .title h2 {
   font-size: xx-large;
+  font-family: 'Shrikhand', cursive, sans-serif;
   font-weight: bolder;
 }
 

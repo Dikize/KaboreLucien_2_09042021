@@ -28,7 +28,7 @@ $gris: #F2F2F2;
             margin-bottom: 30px;        
             
             h2 {
-                font-size: xx-large;
+                font-size: x-large;
                 font-family: 'Shrikhand', cursive, sans-serif;
                 font-weight: bolder;            
             }
@@ -59,7 +59,7 @@ $gris: #F2F2F2;
         main {
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
-            grid-template-rows: 60px 560px 60px;
+            grid-template-rows: 60px 585px 100px;
             
             .title {
                 grid-column: 1/4;

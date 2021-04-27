@@ -9,7 +9,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 0px;
-  font-size: larger;
+  font-size: smaller;
 }
 
 header .logo {
@@ -61,7 +61,7 @@ header form .search button {
   display: none;
 }
 
-header form h2 {
+header form h1 {
   padding: 10px 20px 0;
   font-weight: bolder;
   margin: 0;
@@ -87,7 +87,7 @@ header form button {
   cursor: pointer;
 }
 
-header form button p {
+header form button span {
   display: inline-block;
   font-size: larger;
   color: white;
@@ -150,7 +150,7 @@ header form button p {
   header form button {
     display: none;
   }
-  header form h2 {
+  header form h1 {
     padding: 0;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -183,7 +183,6 @@ html {
 
 body {
   width: 100%;
-  height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -226,6 +225,30 @@ footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
 
 footer .footerItem .fas .fa-hands-helping {
   font-size: small;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
+    background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+  }
+  body .container,
+  body footer {
+    max-width: 580px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
+    background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+  }
+  body .container,
+  body footer {
+    max-width: 1171px;
+    margin: auto;
+  }
 }
 
 @-webkit-keyframes circle {
@@ -601,18 +624,9 @@ ul li:nth-child(10) {
 }
 
 /*--( Simulation de chargement de page )--*/
-iframe {
-  position: absolute;
-  z-index: 1000;
-  border: none;
-  outline: none;
-  -webkit-animation: bounce-load 10s ease-in both;
-          animation: bounce-load 10s ease-in both;
-  height: 100vh;
-}
-
 /*--( container principale )--*/
 .container {
+  background: #fff;
   display: -ms-grid;
   display: grid;
   row-gap: 10px;
@@ -723,7 +737,7 @@ article .card .item {
   padding: 12px 25px 10px 12px;
 }
 
-article .card .item figcaption {
+article .card .item h3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -929,15 +943,6 @@ aside .indicePosition {
 }
 
 @media (min-width: 1024px) {
-  body {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
-    background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
-  }
-  body .container,
-  body footer {
-    max-width: 1171px;
-    margin: auto;
-  }
   main {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;

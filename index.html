@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-type" content="text/html"; charset=utf-8> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Menu restaurant">
     <meta name="author" content="Lucien Kabore">
@@ -11,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/load.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -24,6 +24,51 @@
 
     <!-- Simulation Chargement de la page -->
     <!-- <iframe id="load" title="Simulation de chargement" width="100%" height="100%" src="load.html"></iframe> -->
+    <!-- <section>
+        <div class="loadingRing">
+            <div class="ring">
+                <div class="flash">
+                    <ul>
+                        <li>C</li>
+                        <li>H</li>
+                        <li>A</li>
+                        <li>R</li>
+                        <li>G</li>
+                        <li>E</li>
+                        <li>M</li>
+                        <li>E</li>
+                        <li>N</li>
+                        <li>T</li>
+                    </ul>
+                </div>
+                <span></span>
+            </div>
+        </div>
+        <a  href="#" class="card loading">
+            <div class="img"></div>
+            <div class="item">
+                <figcaption></figcaption>
+                <p></p>
+                <p></p>
+            </div>
+        </a>
+        <a  href="#" class="card loading">
+            <div class="img"></div>
+            <div class="item">
+                <figcaption></figcaption>
+                <p></p>
+                <p></p>
+            </div>
+        </a>
+        <a  href="#" class="card loading">
+            <div class="img"></div>
+            <div class="item">
+                <figcaption></figcaption>
+                <p></p>
+                <p></p>
+            </div>
+        </a>
+    </section> -->
 
     <div class="container">
         <!--*************************** ( header ) ***************************-->
@@ -34,7 +79,7 @@
             <form >
     
                 <div class="search">
-                    <label for="">
+                    <label for="image">
                         <input type="image" id="image" alt="logo checkbox" src="images/logo/search.svg">
                         <!-- <img src="" alt="icone"> -->
                     </label>
@@ -42,11 +87,11 @@
                     <button></button>
                 </div>
             
-                <h2>Réservez le menu qui vous convient</h2>
+                <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
             
                 <button> 
-                    <p>Explorer nos restaurants</p> 
+                    <span>Explorer nos restaurants</span> 
                 </button>
             </form>
         </header>
@@ -60,7 +105,7 @@
                 <a  href="menilmontant/index.html" class="card">
                     <div class="img"></div>
                     <div class="item">
-                        <figcaption><strong>La palette du goût</strong></figcaption>
+                        <h3><strong>La palette du goût</strong></h3>
                         <p>Ménilmontant</p>
                         <svg viewBox="-9 -28 526.00002 512" width="20" height="20" xmlns="http://www.w3.org/2000/svg" stroke="" fill=""><path d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"/><defs><linearGradient id="bg"><stop offset="0%" stop-color="#9356DC"></stop><stop offset="100%" stop-color="#FF79DA"></stop></linearGradient></defs></svg>
                     </div>
@@ -70,7 +115,7 @@
                 <a href="charonne/index.html" class="card">
                     <div class="img"></div>
                     <div class="item">
-                        <figcaption><strong>La note enchantée</strong></figcaption>
+                        <h3><strong>La note enchantée</strong></h3>
                         <p>Charonne</p>
                         <svg viewBox="-9 -28 526.00002 512" width="20" height="20" xmlns="http://www.w3.org/2000/svg" stroke="" fill=""><path d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"/><defs><linearGradient id="bg"><stop offset="0%" stop-color="#9356DC"></stop><stop offset="100%" stop-color="#FF79DA"></stop></linearGradient></defs></svg>
                     </div>
@@ -80,7 +125,7 @@
                 <a href="ALaFrancaise/index.html" class="card">
                     <div class="img"></div>
                     <div class="item">
-                        <figcaption><strong>À la française</strong></figcaption>
+                        <h3><strong>À la française</strong></h3>
                         <p>Cité Rouge</p>
                         <svg viewBox="-9 -28 526.00002 512" width="20" height="20" xmlns="http://www.w3.org/2000/svg" stroke="" fill=""><path d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"/><defs><linearGradient id="bg"><stop offset="0%" stop-color="#9356DC"></stop><stop offset="100%" stop-color="#FF79DA"></stop></linearGradient></defs></svg>
                     </div>
@@ -90,7 +135,7 @@
                 <a  href="mericourt/index.html" class="card">
                     <div class="img"></div>
                     <div class="item">
-                        <figcaption><strong>Le délice des sens</strong></figcaption>
+                        <h3><strong>Le délice des sens</strong></h3>
                         <p>Folie-Méricourt</p>
                         <svg viewBox="-9 -28 526.00002 512" width="20" height="20" xmlns="http://www.w3.org/2000/svg" stroke="" fill=""><path d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"/><defs><linearGradient id="bg"><stop offset="0%" stop-color="#9356DC"></stop><stop offset="100%" stop-color="#FF79DA"></stop></linearGradient></defs></svg>
                     </div>
@@ -106,21 +151,21 @@
                 <figure class="card">
                     <div class="indicePosition">1</div>
                     <i class="fas fa-mobile-alt"></i>
-                    <figcaption><strong>Choisissez un restaurant</strong></figcaption>
+                    <h3><strong>Choisissez un restaurant</strong></h3>
                 </figure><!-- Fin Carte -->
 
                 <!-- Carte -->
                 <figure class="card">
                     <div class="indicePosition">2</div>
                     <img src="images/logo/list.svg" alt="">
-                    <figcaption><strong>Composez votre menu</strong></figcaption>
+                    <h3><strong>Composez votre menu</strong></h3>
                 </figure><!-- Fin Carte -->
 
                 <!-- Carte -->
                 <figure class="card">
                     <div class="indicePosition">3</div>
                     <i class="fas fa-store"></i>
-                    <figcaption><strong>Dégustez au restaurant</strong></figcaption>
+                    <h3><strong>Dégustez au restaurant</strong></h3>
                 </figure><!-- Fin Carte -->
 
             </aside>

@@ -1,151 +1,149 @@
 $green: #99E2D0;
-@import '_keyframes';
-
-.card {
-    width: 100%;
-    height: 80px;
-    margin: 20px 0;
-    padding-left: 10px;
-    font-size: small;
-    background-color: white;
-    cursor: pointer;
-    border-radius: 15px;
-    box-shadow: 4px 8px 16px rgba(255, 255, 255, 0.3);
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 40px 20px;
-    align-items: center;
-
-    // animation au clique
-    border-bottom:  5px solid rgba(0, 0, 0, 0.3);
-    transition: all 0.1s;
-    float: left;
-    animation: card-blur 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
-
+article {
+    &:nth-child(2) {
+        animation: card-blur 1.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
+    }
+    &:nth-child(3) {
+        animation: card-blur 3.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
+    }
     &:nth-child(4) {
-        animation: card-blur 1.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
-    }
-    &:nth-child(5) {
-        animation: card-blur 2.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
-    }
-    &:hover {
-        transform: translate(0,5px);
-        border: 1px solid $green;
+        animation: card-blur 5.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
     }
 
-    h3 {
-        font-size: larger;
-        font-weight: bold;
-        margin-bottom: 3px;
-        align-self: flex-end;
-    }
-    p {
-        white-space: nowrap;
-        overflow: hidden; text-overflow: ellipsis;
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .checkbox {
-        height: 100%;
-        grid-column: 2/3;
-        grid-row: 1/4; 
-        display: flex;  
-        column-gap: 20px;
-
-        .check {
-            display: none;
-            
-            // input[type="image"] {
-            //     background-color: #333;
-            //     background: no-repeat center / cover url('../images/logo/checked-buttom.svg');
-            // }
+    .card-Menu {
+        width: 100%;
+        height: 80px;
+        margin: 20px 0;
+        padding-left: 10px;
+        font-size: small;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 4px 8px 16px rgba(255, 255, 255, 0.3);
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 40px 20px;
+        align-items: center;
+    
+        // animation au clique
+        border-bottom:  5px solid rgba(0, 0, 0, 0.3);
+        transition: all 0.1s;
+        float: left;
+        animation: card-blur 1.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
+    
+        &:nth-child(4) {
+            animation: card-blur 2.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
         }
-        span {
-            margin: auto;
-            margin-bottom: 22px;
+        &:nth-child(5) {
+            animation: card-blur 3.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
         }
-    }
-    &:hover {
+        &:hover {
+            transform: translate(0,5px);
+            border: 1px solid $green;
+        }
+    
+        h3 {
+            font-size: larger;
+            font-weight: bold;
+            margin-bottom: 3px;
+            align-self: flex-end;
+        }
+        p {
+            white-space: nowrap;
+            overflow: hidden; text-overflow: ellipsis;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
         .checkbox {
+            height: 100%;
+            grid-column: 2/3;
+            grid-row: 1/4; 
+            display: flex;  
+            column-gap: 20px;
+    
             .check {
-                height: 100%;
-                width: 60%;
-                background-color:$green;
-                border-top-right-radius: 15px;
-                border-bottom-right-radius: 15px;
-                display: flex;
-                // animation
-                animation: slidein 1000ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
-                input[type="checkbox"] {
-                    width: 0;
-                    height: 0;
-                    opacity: 0;
-                }
-                input[type="image"] {
-                    margin: auto;
-                    animation: rotate-up 0.65s linear both;
-                }
+                display: none;
+                
+                // img {
+                //     background-color: #333;
+                //     background: no-repeat center / cover url('../images/logo/checked-buttom.svg');
+                // }
+            }
+            span {
+                margin: auto;
+                margin-bottom: 22px;
             }
         }
-    } 
-
-    @media (min-width: 768px) and (max-width: 1023px){
-        & {
-            height: 155px; width: 90%;
-            padding-left: 0; margin: 10px auto;
-            text-align: center;
-            display: grid;
-            grid-template-rows: 40px 50px 65px;
-            grid-template-columns: 100%;
-            transition: all 0.2s ease-in-out;
-            h3 {
-                align-self: center;
-            }
-            p {
-                white-space: normal;
-            }
+        &:hover {
             .checkbox {
-                position: relative;
-                grid-column: 1/2;
-                grid-row: 3/3;
+                .check {
+                    height: 100%;
+                    width: 60%;
+                    background-color:$green;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    display: flex;
+                    // animation
+                    animation: slidein 1000ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
+                    input[type="checkbox"] {
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
+                    }
+                    img {
+                        margin: auto;
+                        animation: rotate-up 0.65s linear both;
+                    }
+                }
             }
-            &:hover { 
-                transform: translateY(-5px);
-                span {
-                    position: relative;
-                    top: -25px;
+        } 
+    
+        @media (min-width: 768px) and (max-width: 1023px){
+            & {
+                height: 155px; width: 90%;
+                padding-left: 0; margin: 10px auto;
+                text-align: center;
+                display: grid;
+                grid-template-rows: 40px 50px 65px;
+                grid-template-columns: 100%;
+                transition: all 0.2s ease-in-out;
+                h3 {
+                    align-self: center;
+                }
+                p {
+                    white-space: normal;
                 }
                 .checkbox {
-                    width: 100%;
-                    grid-row: 3/4;
+                    position: relative;
                     grid-column: 1/2;
-                    flex-direction: column;
-                    .check {
-                        width: 100%; height: 50px;
-                        border-radius: 0 0 15px 15px;
-                        position: absolute;
-                        bottom: -6px;
-                        animation: slidein-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    
-                        input[type="checkbox"] {
-                            margin: 0;
+                    grid-row: 3/3;
+                }
+                &:hover { 
+                    transform: translateY(-5px);
+                    span {
+                        position: relative;
+                        top: -25px;
+                    }
+                    .checkbox {
+                        width: 100%;
+                        grid-row: 3/4;
+                        grid-column: 1/2;
+                        flex-direction: column;
+                        .check {
+                            width: 100%; height: 50px;
+                            border-radius: 0 0 15px 15px;
+                            position: absolute;
+                            bottom: -6px;
+                            animation: slidein-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        
+                            input[type="checkbox"] {
+                                margin: 0;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-
-article {
-    &:nth-child(2) {
-        animation: card-blur 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
-    }
-    &:nth-child(3) {
-        animation: card-blur 1.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
-    }
-    &:nth-child(4) {
-        animation: card-blur 2.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) alternate-reverse both;
-    }
-}
+}    

@@ -1,7 +1,7 @@
 $green: #99E2D0;
 $gris: #F2F2F2;
 
-.container {
+.container-Menu {
     padding: 0;
     background-color: $gris;
 
@@ -55,7 +55,7 @@ $gris: #F2F2F2;
 
 }
 @media (min-width: 768px) and (max-width: 1023px){
-    .container {
+    .container-Menu {
         main {
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
@@ -91,7 +91,7 @@ $gris: #F2F2F2;
     }
 }
 @media (min-width: 1024px) {
-    .container {
+    .container-Menu {
         main {
             padding: 0;
             display: grid;

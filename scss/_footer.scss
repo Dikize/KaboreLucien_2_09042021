@@ -56,9 +56,11 @@ footer {
     body {
         background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
         .container, 
+        .container-Menu, 
         footer {
             max-width: 580px;
             margin: auto;
+            width: 100%;
         }
     }
 }
@@ -67,6 +69,7 @@ footer {
     body {
         background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
         .container, 
+        .container-Menu, 
         footer {
             max-width: 1171px;
             margin: auto;

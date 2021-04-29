@@ -61,6 +61,7 @@ footer .footerItem .fas .fa-hands-helping {
     background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
   }
   body .container,
+  body .container-Menu,
   body footer {
     max-width: 580px;
     margin: auto;
@@ -73,6 +74,7 @@ footer .footerItem .fas .fa-hands-helping {
     background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
   }
   body .container,
+  body .container-Menu,
   body footer {
     max-width: 1171px;
     margin: auto;

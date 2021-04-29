@@ -1,15 +1,10 @@
 header {
     background-color: #fff;
-    margin-top: 15px;
     display: flex;
     flex-direction: column;
     row-gap: 0px;
     font-size: smaller;
 
-    .logo {
-        font-family: 'Shrikhand', cursive, sans-serif;
-        text-align: center;
-    }
     form {
         height: 390px;
         background-color: $gris;
@@ -47,9 +42,7 @@ header {
         }
         h1 {
             padding: 10px 20px 0;
-            font-weight: bolder;
             margin: 0;
-            font-family: 'Shrikhand', cursive, sans-serif;
         }
         p {
             font-size: large;
@@ -141,6 +134,37 @@ header {
         }
         form .search {
             width: 570px;
+        }
+    }
+}
+
+
+.header-Menu {
+    .item-logo {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 10% 80% 10%;
+        align-items: center;
+        
+        .logo {
+            justify-self: center;
+        }
+        .arrow {
+            justify-self: end;
+        }
+    }
+
+    .img {
+        height: 360px;
+        width: 100%;
+        margin-top: 20px;
+
+        img {
+            height: 360px;
+            width: 100%;
+            background-color: #333;
+            background-size: cover;
+            background-position: center;
         }
     }
 }

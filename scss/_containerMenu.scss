@@ -5,7 +5,7 @@ $gris: #F2F2F2;
     padding: 0;
     background-color: $gris;
 
-    header {
+    .header-Menu {
         background-color: white;
         padding-top: 30px;
     }
@@ -21,26 +21,31 @@ $gris: #F2F2F2;
         flex-direction: column;
     
         .title {
-            width: 111%;
-            display: grid;
-            grid-template-columns: 80% 20%;
-            align-items: center;
-            margin-bottom: 30px;        
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px 20px 0;        
             
-            h2 {
-                font-size: x-large;
-                font-family: 'Shrikhand', cursive, sans-serif;
-                font-weight: bolder;            
-            }
-            .far {
-                justify-self: center;
+            svg {
+                cursor: pointer;
+                // @extend %heartHover;
+                &:hover, &:active {
+                    path {
+                        fill: url(#bg);
+                        stroke: transparent;
+                        transition: 2s;
+                    }
+                }
+                path {
+                    fill: transparent;
+                    stroke-width: 15px;
+                    stroke: #333;
+                }
             }
         }
     }
     
     article {
         h2 {
-            font-size: larger;
             margin: 20px 0;
             position: relative;
             &::before {

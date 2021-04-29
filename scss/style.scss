@@ -6,27 +6,16 @@ $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
 @import '_keyframes';
 
 
-// @mixin gridChild ($column, $row) {
-//     grid-column: $column;
-//     grid-row: $row;
-// }
-
-/*--( Simulation de chargement de page )--*/
-// iframe {
-//     position: absolute;
-//     z-index: 1000;
-//     border: none;
-//     outline: none;
-//     animation: bounce-load 10s ease-in both;
-//     height: 100vh;
-// }
+/*--( animation load container )--*/
+main, header, footer {
+	animation: opacite 25s ease-out alternate-reverse both;
+}
 
 /*--( container principale )--*/
 .container {
     background: #fff;
     display: grid;
     row-gap: 10px;
-    // animation: scale-out-horizontal 13s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
 }
 
 /*--************************* (Footer) *************************--*/

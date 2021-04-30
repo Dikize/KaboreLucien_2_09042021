@@ -24,29 +24,31 @@
 
 
 // font
-.logo {
-    text-align: center;
-}
+.logo {text-align: center;}
 .logo, h1 {
     font-family: 'Shrikhand', cursive, sans-serif;
 }
-
 h1 {
     font-size: x-large;
     font-weight: bolder;            
 }
+.container {
+    h2 {font-size: x-large;}
+    h3 {font-size: medium;}
+    p{font-size: large;}
+}
+.container-Menu {
+    h2, h3 {
+        font-size: larger;
+        font-weight: bold;
+    }
+    h3, p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    p {font-size: small;}
 
-h2, h3 {
-    font-size: larger;
-    font-weight: bold;
-}
-h3, p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-p {
-    font-size: small;
 }
 footer {
     a {

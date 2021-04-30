@@ -33,7 +33,7 @@ footer .footerItem:nth-child(2) a {
   margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
     background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
@@ -123,7 +123,6 @@ header form h1 {
 }
 
 header form p {
-  font-size: large;
   padding: 0 5px;
 }
 
@@ -932,18 +931,30 @@ h1 {
   font-weight: bolder;
 }
 
-h2, h3 {
+.container h2 {
+  font-size: x-large;
+}
+
+.container h3 {
+  font-size: medium;
+}
+
+.container p {
+  font-size: large;
+}
+
+.container-Menu h2, .container-Menu h3 {
   font-size: larger;
   font-weight: bold;
 }
 
-h3, p {
+.container-Menu h3, .container-Menu p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-p {
+.container-Menu p {
   font-size: small;
 }
 

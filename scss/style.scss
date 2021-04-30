@@ -1,12 +1,15 @@
 $gris: #F9F9F9;
 
+@import '_utilities';
 @import '_header';
 @import '_card';
-@import '_utilities';
 @import '_keyframes';
 @import '_footer';
 
 /*--( container principale )--*/
+main, header, footer {
+    animation: hidenContent 15s;
+}
 .container {
     background: #fff;
     display: grid;
@@ -78,7 +81,7 @@ aside {
             width: 27%;
             max-width: 316px;
             // max-width: 415px;
-            background-color: $gris2;
+            background-color: $gris;
             text-align: center;
             height: 755px;
             padding: 0 20px;

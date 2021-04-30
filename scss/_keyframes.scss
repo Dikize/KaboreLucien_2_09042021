@@ -11,7 +11,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: opacite 25s ease-out both;
+    animation: opacite 15s ease-out both;
     
     
     .loader {
@@ -57,7 +57,6 @@
 }
 
 
-// anime acceuil
 @keyframes opacite {
     0% {
         opacity: 1;
@@ -81,6 +80,41 @@
         opacity: 0;
     }
 }
+// anime acceuil
+
+@keyframes hidenContent {
+    0% {
+        min-height: 0;
+        max-height: 0;
+        display: none;
+    }
+    20% {
+        min-height: 0;
+        max-height: 0;
+        display: none;
+    }
+    40% {
+        min-height: 0;
+        max-height: 0;
+        display: none;
+    }
+    60% {
+        min-height: 0;
+        max-height: 0;
+        display: none;
+    }
+    80% {
+        min-height: 0;
+        max-height: 0;
+        display: none;
+    }
+    100% {
+        min-height: 0;
+        max-height: 0;
+        display: block;
+    }
+}
+
 // animation CardMenu
 // Animation blur page
 @keyframes card-blur {

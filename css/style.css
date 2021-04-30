@@ -1,3 +1,90 @@
+main article .card .item svg:hover path, main article .card .item svg:active path {
+  fill: url(#bg);
+  fill: url(#bg1);
+  fill: url(#bg2);
+  fill: url(#bg3);
+  stroke: transparent;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+main article .card .item svg path {
+  fill: transparent;
+  stroke-width: 15px;
+  stroke: #333;
+}
+
+main article .card:nth-child(2) .img, main article .card:nth-child(3) .img, main article .card:nth-child(4) .img, main article .card:nth-child(5) .img {
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo, h1 {
+  font-family: 'Shrikhand', cursive, sans-serif;
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+h2, h3 {
+  font-weight: bold;
+}
+
+.container h2 {
+  font-size: x-large;
+}
+
+.container h3 {
+  font-size: medium;
+}
+
+.container p {
+  font-size: large;
+}
+
+.container-Menu h2 {
+  font-size: larger;
+}
+
+.container-Menu h3, .container-Menu p {
+  font-size: large;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container-Menu p {
+  font-size: small;
+}
+
+footer a {
+  font-size: medium;
+  color: white;
+  text-decoration: none;
+  outline: 0;
+}
+
+footer a:nth-child(1) {
+  font-size: small;
+  font-weight: bold;
+}
+
+footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
+  color: #ffffff;
+  font-size: larger;
+}
+
+footer .footerItem .fas .fa-hands-helping {
+  font-size: small;
+}
+
 header {
   background-color: #fff;
   display: -webkit-box;
@@ -13,7 +100,7 @@ header {
 
 header form {
   height: 390px;
-  background-color: #F9F9F9;
+  background-color: #F2F2F2;
   text-align: center;
   display: -ms-grid;
   display: grid;
@@ -73,8 +160,8 @@ header form button {
   -webkit-box-shadow: 4px 8px 16px white;
           box-shadow: 4px 8px 16px white;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
-  background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #ff79da), color-stop(116.75%, #9356DC));
+  background: linear-gradient(180deg, #ff79da 27%, #9356DC 116.75%);
   cursor: pointer;
 }
 
@@ -308,7 +395,7 @@ main aside .card {
   width: 100%;
   height: 80px;
   margin: 20px 0;
-  background-color: #F9F9F9;
+  background-color: #F2F2F2;
   border-radius: 25px;
   -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
@@ -501,13 +588,13 @@ article .card-Menu .checkbox {
           column-gap: 20px;
 }
 
-article .card-Menu .checkbox .check {
-  display: none;
-}
-
-article .card-Menu .checkbox span {
+article .card-Menu .checkbox .tarif {
   margin: auto;
   margin-bottom: 22px;
+}
+
+article .card-Menu .checkbox .check {
+  display: none;
 }
 
 article .card-Menu:hover .checkbox .check {
@@ -571,10 +658,6 @@ article .card-Menu:hover .checkbox .check img {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
   }
-  article .card-Menu:hover span {
-    position: relative;
-    top: -25px;
-  }
   article .card-Menu:hover .checkbox {
     width: 100%;
     -ms-grid-row: 3;
@@ -588,101 +671,22 @@ article .card-Menu:hover .checkbox .check img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  article .card-Menu:hover .checkbox .tarif {
+    position: relative;
+    top: -34px;
+  }
   article .card-Menu:hover .checkbox .check {
     width: 100%;
     height: 50px;
     border-radius: 0 0 15px 15px;
     position: absolute;
-    bottom: -6px;
+    bottom: 1px;
     -webkit-animation: slidein-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
             animation: slidein-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
   article .card-Menu:hover .checkbox .check input[type="checkbox"] {
     margin: 0;
   }
-}
-
-main article .card .item svg:hover path {
-  fill: url(#bg);
-  fill: url(#bg1);
-  fill: url(#bg2);
-  fill: url(#bg3);
-  stroke: transparent;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-main article .card .item svg path {
-  fill: transparent;
-  stroke-width: 15px;
-  stroke: #333;
-}
-
-main article .card:nth-child(2) .img, main article .card:nth-child(3) .img, main article .card:nth-child(4) .img, main article .card:nth-child(5) .img {
-  background-color: #333;
-  background-size: cover;
-  background-position: center;
-}
-
-.logo {
-  text-align: center;
-}
-
-.logo, h1 {
-  font-family: 'Shrikhand', cursive, sans-serif;
-}
-
-h1 {
-  font-size: x-large;
-  font-weight: bolder;
-}
-
-.container h2 {
-  font-size: x-large;
-}
-
-.container h3 {
-  font-size: medium;
-}
-
-.container p {
-  font-size: large;
-}
-
-.container-Menu h2, .container-Menu h3 {
-  font-size: larger;
-  font-weight: bold;
-}
-
-.container-Menu h3, .container-Menu p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.container-Menu p {
-  font-size: small;
-}
-
-footer a {
-  font-size: medium;
-  color: white;
-  text-decoration: none;
-  outline: 0;
-}
-
-footer a:nth-child(1) {
-  font-size: small;
-  font-weight: bold;
-}
-
-footer .footerItem .fa, footer .footerItem .fas:nth-child(1) {
-  color: #ffffff;
-  font-size: larger;
-}
-
-footer .footerItem .fas .fa-hands-helping {
-  font-size: small;
 }
 
 #loading {
@@ -704,8 +708,8 @@ footer .footerItem .fas .fa-hands-helping {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: opacite 25s ease-out both;
-          animation: opacite 25s ease-out both;
+  -webkit-animation: opacite 15s ease-out both;
+          animation: opacite 15s ease-out both;
 }
 
 #loading .loader {
@@ -838,6 +842,72 @@ footer .footerItem .fas .fa-hands-helping {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes hidenContent {
+  0% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  20% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  40% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  60% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  80% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  100% {
+    min-height: 0;
+    max-height: 0;
+    display: block;
+  }
+}
+
+@keyframes hidenContent {
+  0% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  20% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  40% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  60% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  80% {
+    min-height: 0;
+    max-height: 0;
+    display: none;
+  }
+  100% {
+    min-height: 0;
+    max-height: 0;
+    display: block;
   }
 }
 
@@ -1016,8 +1086,8 @@ footer .footerItem:nth-child(2) a {
 
 @media (max-width: 767px) {
   body {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
-    background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #ff79da), color-stop(116.75%, #9356DC));
+    background: linear-gradient(180deg, #ff79da 27%, #9356DC 116.75%);
   }
   body .container,
   body .container-Menu,
@@ -1030,8 +1100,8 @@ footer .footerItem:nth-child(2) a {
 
 @media (min-width: 1024px) {
   body {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #FF79DA), color-stop(116.75%, #9356DC));
-    background: linear-gradient(180deg, #FF79DA 27%, #9356DC 116.75%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #ff79da), color-stop(116.75%, #9356DC));
+    background: linear-gradient(180deg, #ff79da 27%, #9356DC 116.75%);
   }
   body .container,
   body .container-Menu,
@@ -1042,6 +1112,11 @@ footer .footerItem:nth-child(2) a {
 }
 
 /*--( container principale )--*/
+main, header, footer {
+  -webkit-animation: hidenContent 15s;
+          animation: hidenContent 15s;
+}
+
 .container {
   background: #fff;
   display: -ms-grid;

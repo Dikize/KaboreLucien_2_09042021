@@ -9,7 +9,7 @@ $shadowCard: 4px 8px 16px rgba(0,0,0,0.3);
 
 // Héritage
 %heartHover {
-    &:hover {
+    &:hover, &:active {
         path {
             fill: url(#bg);
             fill: url(#bg1);
@@ -42,17 +42,20 @@ h1 {
     font-size: x-large;
     font-weight: bolder;            
 }
+h2, h3 {
+    font-weight: bold;
+}
 .container {
     h2 {font-size: x-large;}
     h3 {font-size: medium;}
     p{font-size: large;}
 }
 .container-Menu {
-    h2, h3 {
+    h2 {
         font-size: larger;
-        font-weight: bold;
     }
     h3, p {
+        font-size: large;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

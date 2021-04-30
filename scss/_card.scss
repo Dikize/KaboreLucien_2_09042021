@@ -242,7 +242,7 @@ article {
                 margin-bottom: 22px;
             }
         }
-        &:hover {
+        &:hover, &:active {
             .checkbox {
                 .check {
                     height: 100%;

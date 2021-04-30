@@ -1061,7 +1061,7 @@ main {
 }
 
 article {
-  background-color: #F9F9F9;
+  background-color: #F2F2F2;
   padding: 30px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1138,7 +1138,7 @@ aside {
   main aside {
     width: 27%;
     max-width: 316px;
-    background-color: #F9F9F9;
+    background-color: #F2F2F2;
     text-align: center;
     height: 755px;
     padding: 0 20px;

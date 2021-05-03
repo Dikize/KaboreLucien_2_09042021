@@ -98,6 +98,10 @@ header {
   font-size: smaller;
 }
 
+header .logo {
+  padding: 20px 0 10px 0;
+}
+
 header form {
   height: 390px;
   background-color: #F2F2F2;
@@ -173,7 +177,7 @@ header form button span {
   text-decoration: none;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   header form {
     height: 200px;
     -ms-grid-rows: 45px 50px 100px;
@@ -294,6 +298,13 @@ main article .card {
   -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
   position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+main article .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 main article .card .img {
@@ -397,6 +408,7 @@ main aside .card {
   margin: 20px 0;
   background-color: #F2F2F2;
   border-radius: 25px;
+  cursor: pointer;
   -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
   display: -webkit-box;
@@ -405,6 +417,15 @@ main aside .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+main aside .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 0px 10px #9356DC;
+          box-shadow: 0px 0px 10px #9356DC;
 }
 
 main aside .card .fa, main aside .card .fas:nth-child(2) {
@@ -586,6 +607,7 @@ article .card-Menu .checkbox {
   display: flex;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  cursor: pointer;
 }
 
 article .card-Menu .checkbox .tarif {
@@ -639,6 +661,7 @@ article .card-Menu:hover .checkbox .check img {
     transition: all 0.2s ease-in-out;
   }
   article .card-Menu h3 {
+    padding: 0 5px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -689,62 +712,6 @@ article .card-Menu:hover .checkbox .check img {
   }
 }
 
-#loading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #042104;
-  z-index: 1000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation: opacite 15s ease-out both;
-          animation: opacite 15s ease-out both;
-}
-
-#loading .loader {
-  position: relative;
-  -webkit-animation: animateBgColor 10s linear infinite;
-          animation: animateBgColor 10s linear infinite;
-}
-
-#loading .loader span {
-  position: absolute;
-  top: 0;
-  left: -200px;
-  width: 200px;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: rotate(calc(18deg * var(--i)));
-          transform: rotate(calc(18deg * var(--i)));
-}
-
-#loading .loader span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  background-color: #00ff0a;
-  border-radius: 50%;
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
-  -webkit-animation-delay: calc(-0.1s * var(--i));
-          animation-delay: calc(-0.1s * var(--i));
-  -webkit-box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
-          box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
-}
-
 @-webkit-keyframes animate {
   0% {
     -webkit-transform: translateX(0) scale(0.5);
@@ -780,9 +747,14 @@ article .card-Menu:hover .checkbox .check img {
     -webkit-filter: hue-rotate(0deg);
             filter: hue-rotate(0deg);
   }
-  100% {
+  90% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    display: none;
   }
 }
 
@@ -791,123 +763,14 @@ article .card-Menu:hover .checkbox .check img {
     -webkit-filter: hue-rotate(0deg);
             filter: hue-rotate(0deg);
   }
-  100% {
+  90% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
   }
-}
-
-@-webkit-keyframes opacite {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
   100% {
     opacity: 0;
-  }
-}
-
-@keyframes opacite {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes hidenContent {
-  0% {
-    min-height: 0;
-    max-height: 0;
+    width: 0;
     display: none;
-  }
-  20% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  40% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  60% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  80% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  100% {
-    min-height: 0;
-    max-height: 0;
-    display: block;
-  }
-}
-
-@keyframes hidenContent {
-  0% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  20% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  40% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  60% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  80% {
-    min-height: 0;
-    max-height: 0;
-    display: none;
-  }
-  100% {
-    min-height: 0;
-    max-height: 0;
-    display: block;
   }
 }
 
@@ -1098,6 +961,18 @@ footer .footerItem:nth-child(2) a {
   }
 }
 
+@media (min-width: 768px) {
+  footer {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media (min-width: 1024px) {
   body {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #ff79da), color-stop(116.75%, #9356DC));
@@ -1112,11 +987,6 @@ footer .footerItem:nth-child(2) a {
 }
 
 /*--( container principale )--*/
-main, header, footer {
-  -webkit-animation: hidenContent 15s;
-          animation: hidenContent 15s;
-}
-
 .container {
   background: #fff;
   display: -ms-grid;
@@ -1124,7 +994,60 @@ main, header, footer {
   row-gap: 10px;
 }
 
-/*--************************* (Footer) *************************--*/
+#loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #042104;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: animateBgColor 15s ease-out both;
+          animation: animateBgColor 15s ease-out both;
+}
+
+#loading .loader {
+  position: relative;
+}
+
+#loading .loader span {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotate(calc(18deg * var(--i)));
+          transform: rotate(calc(18deg * var(--i)));
+}
+
+#loading .loader span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #00ff0a;
+  border-radius: 50%;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+  -webkit-animation-delay: calc(-0.1s * var(--i));
+          animation-delay: calc(-0.1s * var(--i));
+  -webkit-box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+          box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1135,7 +1058,7 @@ main {
           flex-direction: column-reverse;
 }
 
-article {
+main article {
   background-color: #F2F2F2;
   padding: 30px 15px;
   display: -webkit-box;
@@ -1147,11 +1070,11 @@ article {
           flex-direction: column;
 }
 
-article h2 {
+main article h2 {
   margin: 10px 0;
 }
 
-aside {
+main aside {
   height: 490px;
   display: -webkit-box;
   display: -ms-flexbox;

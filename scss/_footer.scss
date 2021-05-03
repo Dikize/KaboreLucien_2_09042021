@@ -41,14 +41,20 @@ footer {
         }
     }
 }
-
+@media (min-width: 768px) {
+    footer {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 @media (min-width: 1024px) {
     body {
         background: linear-gradient(180deg, $rose 27%, $violet 116.75%);
         .container, 
         .container-Menu, 
         footer {
-            max-width: 1171px;
+            max-width: 1170px;
             margin: auto;
         }
     }

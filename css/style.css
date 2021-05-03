@@ -4,8 +4,8 @@ main article .card .item svg:hover path, main article .card .item svg:active pat
   fill: url(#bg2);
   fill: url(#bg3);
   stroke: transparent;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 main article .card .item svg path {
@@ -216,7 +216,6 @@ header form button span {
   }
   header form .search input[type="search"] {
     height: 100%;
-    background: white;
   }
   header form .search button {
     display: block;
@@ -276,7 +275,6 @@ header form button span {
 .header-Menu .img {
   height: 360px;
   width: 100%;
-  margin-top: 20px;
 }
 
 .header-Menu .img img {
@@ -712,6 +710,19 @@ article .card-Menu:hover .checkbox .check img {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  #charonne {
+    position: relative;
+    -ms-grid-rows: 60px 770px;
+        grid-template-rows: 60px 770px;
+  }
+  #charonne .button3D {
+    position: absolute;
+    -webkit-transform: translate(36px, -118px);
+            transform: translate(36px, -118px);
+  }
+}
+
 @-webkit-keyframes animate {
   0% {
     -webkit-transform: translateX(0) scale(0.5);
@@ -981,7 +992,7 @@ footer .footerItem:nth-child(2) a {
   body .container,
   body .container-Menu,
   body footer {
-    max-width: 1171px;
+    max-width: 1170px;
     margin: auto;
   }
 }

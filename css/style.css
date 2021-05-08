@@ -1020,8 +1020,8 @@ footer .footerItem:nth-child(2) a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: animateBgColor 15s ease-out both;
-          animation: animateBgColor 15s ease-out both;
+  -webkit-animation: animateBgColor 4s ease-out both;
+          animation: animateBgColor 4s ease-out both;
 }
 
 #loading .loader {

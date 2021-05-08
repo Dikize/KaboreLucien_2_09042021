@@ -14,7 +14,7 @@ main article .card .item svg path {
   stroke: #333;
 }
 
-main article .card:nth-child(2) .img, main article .card:nth-child(3) .img, main article .card:nth-child(4) .img, main article .card:nth-child(5) .img {
+.header-Menu .img img, main article .card:nth-child(2) .img, main article .card:nth-child(3) .img, main article .card:nth-child(4) .img, main article .card:nth-child(5) .img {
   background-color: #333;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,6 @@ header form .search input[type="search"] {
   background-color: #F2F2F2;
   font-size: large;
   text-align: center;
-  cursor: pointer;
   -webkit-box-shadow: 4px 8px 16px inset #B6B6B6;
           box-shadow: 4px 8px 16px inset #B6B6B6;
   border: 1px solid transparent;
@@ -271,13 +270,13 @@ header form button span {
     grid-row: 3/4;
   }
   header form .search label {
-    position: relative;
-    left: 0;
     width: 70px;
     height: 100%;
+    border: 1px solid white;
+    position: relative;
+    left: 0;
     display: -ms-grid;
     display: grid;
-    background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
   }
   header form .search label input[type="image"] {
@@ -354,9 +353,6 @@ header form button span {
 .header-Menu .img img {
   height: 360px;
   width: 100%;
-  background-color: #333;
-  background-size: cover;
-  background-position: center;
 }
 
 main article .card {

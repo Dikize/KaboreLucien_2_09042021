@@ -1,5 +1,3 @@
-$gris: #F9F9F9;
-
 @import '_utilities';
 @import '_header';
 @import '_card';
@@ -36,7 +34,7 @@ $gris: #F9F9F9;
         span {
             position: absolute;
             top: 0;
-            left: -200px;
+            left: -225px;
             width: 200px;
             transform-origin: right;
             transform: rotate(calc(18deg * var(--i)));

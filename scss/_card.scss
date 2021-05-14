@@ -50,7 +50,6 @@ main {
             .item {
                 height: 80px;
                 width: 100%;
-                font-size: larger;
                 display: grid;
                 grid-template-columns: 80% 20%;
                 grid-template-rows: 30px 28px;
@@ -63,7 +62,6 @@ main {
                     justify-self: flex-start;
                 }
                 p {
-                    font-size: large;
                     grid-column: 1/2;
                     grid-row: 2/3;
                     align-self: center;
@@ -211,7 +209,7 @@ article {
         grid-template-columns: 70% 30%;
         grid-template-rows: 40px 20px;
         align-items: center;
-    
+        
         // animation au clique
         border-bottom:  5px solid rgba(0, 0, 0, 0.3);
         transition: all 0.1s;
@@ -228,7 +226,7 @@ article {
             transform: translate(0,5px);
             border: 1px solid $green-light;
         }
-    
+        
         h3 {
             margin-bottom: 3px;
             align-self: flex-end;
@@ -244,7 +242,7 @@ article {
             display: flex;  
             column-gap: 20px;
             cursor: pointer;
-    
+            
             .tarif {
                 margin: auto;
                 margin-bottom: 22px;

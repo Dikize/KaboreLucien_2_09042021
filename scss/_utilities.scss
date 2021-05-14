@@ -46,9 +46,10 @@ h2, h3 {
     font-weight: bold;
 }
 .container {
-    h2 {font-size: x-large;}
-    h3 {font-size: medium;}
+    h2{font-size: x-large;}
+    h3{font-size: larger;}
     p{font-size: large;}
+    .item p{font-size: medium;}
 }
 .container-Menu {
     h2 {
@@ -76,12 +77,9 @@ footer {
         }
     }
     .footerItem {
-        .fa, .fas:nth-child(1) {
+        .fas {
             color: #ffffff;
-            font-size: larger;
-        }
-        .fas .fa-hands-helping  {
-            font-size: small;
+            font-size: smaller;
         }
     }
 }

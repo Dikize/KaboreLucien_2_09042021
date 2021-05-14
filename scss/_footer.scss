@@ -18,13 +18,15 @@ footer {
     align-items: center;
     padding: 20px;
     
-    .footerItem {
-        
-        &:nth-child(1) a {
-            margin-left: 10px;
+    .Itemun a {
+        margin-left: 10px;
+    }
+    .Item {
+        a {
+            margin-left: 5px;
         }
-        &:nth-child(2) a {
-            margin-left: 10px;
+        .fas {
+            transform: rotate(160deg);
         }
     }
 }
